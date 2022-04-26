@@ -1,0 +1,15 @@
+\begin{tabular}{|l|l|r|r|r|r|r|}
+{} & {Model} & {Accuracy} & {Precision} & {Recall} & {Specificity} & {MCC} \\
+0 & RandomForestGini_BAG_L1 & 0.910 & 0.691 & 0.403 & 0.976 & 0.484 \\
+1 & RandomForestEntr_BAG_L1 & 0.911 & 0.697 & 0.402 & 0.977 & 0.486 \\
+2 & CatBoost_BAG_L1 & \background-colorblue 0.914 & \background-colorblue 0.760 & 0.370 & \background-colorblue 0.985 & 0.492 \\
+3 & ExtraTreesGini_BAG_L1 & 0.911 & 0.699 & 0.405 & 0.977 & 0.489 \\
+4 & ExtraTreesEntr_BAG_L1 & 0.911 & 0.701 & 0.402 & 0.978 & 0.488 \\
+5 & NeuralNetFastAI_BAG_L1 & 0.905 & 0.656 & 0.379 & 0.974 & 0.452 \\
+6 & NeuralNetTorch_BAG_L1 & 0.910 & 0.653 & 0.466 & 0.968 & 0.504 \\
+7 & RandomForestGini_BAG_L2 & 0.913 & 0.681 & 0.466 & 0.972 & \background-colorgreen 0.518 \\
+8 & RandomForestEntr_BAG_L2 & 0.912 & 0.675 & 0.458 & 0.971 & 0.510 \\
+9 & CatBoost_BAG_L2 & 0.913 & 0.677 & \background-colorblue 0.467 & 0.971 & 0.517 \\
+10 & ExtraTreesGini_BAG_L2 & 0.912 & 0.675 & 0.453 & 0.972 & 0.507 \\
+11 & ExtraTreesEntr_BAG_L2 & 0.913 & 0.689 & 0.453 & 0.973 & 0.514 \\
+\end{tabular}

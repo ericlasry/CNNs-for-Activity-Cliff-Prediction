@@ -1,0 +1,12 @@
+\begin{tabular}{|l|r|r|r|r|r|r|}
+{} & {Accuracy} & {Precision} & {Recall} & {Specificity} & {F1} & {MCC} \\
+{Model} & {} & {} & {} & {} & {} & {} \\
+LR:0.0001, Dropout:0.6 & 0.884 & 0.496 & 0.380 & 0.950 & 0.430 & 0.371 \\
+LR:0.0001, Dropout:0.7 & 0.887 & 0.515 & 0.356 & 0.956 & 0.421 & 0.368 \\
+LR:0.0001, Dropout:0.8 & 0.885 & 0.502 & \background-colorlightblue 0.402 & 0.948 & \background-colorlightblue 0.447 & \background-colorlightgreen 0.386 \\
+LR:0.0001, Dropout:0.9 & \background-colorlightblue 0.893 & \background-colorlightblue 0.562 & 0.326 & \background-colorlightblue 0.967 & 0.413 & 0.374 \\
+LR:0.001, Dropout:0.6 & 0.888 & 0.518 & 0.379 & 0.954 & 0.438 & 0.382 \\
+LR:0.001, Dropout:0.7 & 0.889 & 0.525 & 0.363 & 0.957 & 0.429 & 0.378 \\
+LR:0.001, Dropout:0.8 & 0.889 & 0.524 & 0.377 & 0.955 & 0.438 & 0.385 \\
+LR:0.001, Dropout:0.9 & 0.893 & 0.560 & 0.329 & 0.966 & 0.415 & 0.375 \\
+\end{tabular}

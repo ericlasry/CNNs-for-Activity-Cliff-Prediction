@@ -1,0 +1,9 @@
+\begin{tabular}{|l|r|r|r|r|r|r|}
+{} & {Accuracy} & {Precision} & {Recall} & {Specificity} & {F1} & {MCC} \\
+{# Layers} & {} & {} & {} & {} & {} & {} \\
+2 & 0.869 & 0.366 & 0.244 & 0.947 & 0.293 & 0.229 \\
+3 & 0.870 & 0.382 & 0.264 & 0.946 & 0.312 & 0.248 \\
+4 & 0.866 & 0.377 & \background-colorlightblue 0.310 & 0.936 & \background-colorlightblue 0.340 & \background-colorlightgreen 0.268 \\
+5 & 0.862 & 0.354 & 0.284 & 0.935 & 0.315 & 0.242 \\
+6 & \background-colorlightblue 0.875 & \background-colorlightblue 0.395 & 0.228 & \background-colorlightblue 0.956 & 0.289 & 0.236 \\
+\end{tabular}
