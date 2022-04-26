@@ -6,23 +6,23 @@ Exploration and analysis of CNN architectures for Activity Cliff prediction.
 
 * ### Notebooks: 
 >#### Section 0: Data processing and exploratory analysis
->>  "00". Draws fragmented image MMP representations from SMILES
->>  "01". Splits and saves image data using the procedure below
->>  "02". Generates 498-bit MACCS fingerprint-based MMP representations from SMILES
->>  "03". EDA for the factor Xa inhibitor dataset
+>>  - 0.0: Draws fragmented image MMP representations from SMILES
+>>  - 0.1: Splits and saves image data using the procedure below
+>>  - 0.2: Generates 498-bit MACCS fingerprint-based MMP representations from SMILES
+>>  - 0.3: EDA for the factor Xa inhibitor dataset
 >
 >#### Section 1: Training CNNs and AutoGluon classifiers
->>  "10". Training procedure for CNNs
->>  "11". Training AutoGluon models
+>>  - 1.0: Training procedure for CNNs
+>>  - 1.1: Training AutoGluon models
 >
 >#### Section 2: Evalution of trained models
->>  "20". CNN evaluation metrics
->>  "21". AutoGluon evaluation metrics
->>  "22". ROC curves for all models
+>>  - 2.0: CNN evaluation metrics
+>>  - 2.1: AutoGluon evaluation metrics
+>>  - 2.2: ROC curves for all models
 >
 >#### Section 3: Explainability methods
->>  "30". Grad-CAM for CNN predictions
->>  "31". SHAP for AutoGluon predictions
+>>  - 3.0: Grad-CAM for CNN predictions
+>>  - 3.1: SHAP for AutoGluon predictions
 
 * ### superpac
 > - base.py : 
@@ -41,8 +41,8 @@ Exploration and analysis of CNN architectures for Activity Cliff prediction.
 > - agClassifier :
 
 * ### misc
-> ARC_scripts :
-> tex_tables : 
+> - ARC_scripts :
+> - tex_tables : 
 
 
 ## Raw Data Generation
@@ -66,6 +66,13 @@ Splitting up MMPs in a useful way for machine learning is less trivial than one 
 - two_out: the MMPs were both compounds are in the (underlying, single-molecule)test set
 - two_out_seen_core: same as two_out, but only with structural cores which appear in the (underlying, single-molecule) training set
 - two_out_unseen_core: same as two_out, but only with structural cores which do not appear in the (underlying, single-molecule) training set
+
+
+Index sets:
+- x_smiles[ind_train_mols] = all smiles in the (underlying, single-molecule) training set
+- x_smiles[ind_test_mols] = all smiles in the (underlying, single-molecule) test set
+- X_smiles_mmps[ind_two_out_mmps] = All MMPs where both compounds lie in x_smiles[ind_test_mols]
+- X_smiles_mmps[ind_one_out_mmps] = All MMPs where exactly one compound lies in x_smiles[ind_train_mols] and the other compound lies in x_smiles[ind_test_mols]
 
 
 Index sets:
